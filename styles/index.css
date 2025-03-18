@@ -1,0 +1,119 @@
+/* Estilos principales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2a2a2a;
+    overflow-x: hidden;
+    padding-top: 1%;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(170deg, #000000, #2b2b2b);
+    padding: 1%;
+    border-style: double;
+    border-color: aliceblue;  
+    border-radius: 15px;
+}
+
+#estelar {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    color: aliceblue;
+    font-size: 250%;
+    font-weight: 150;
+}
+
+#menubtn {
+    color: aliceblue;
+    background: #2b2b2b;
+    border-radius: 10px;
+    border: 2px double aliceblue;
+    font-size: 2rem;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    z-index: 1001;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+}
+
+#menubtn:hover {
+    color: #ffcc00;
+    background-color: #444444;
+    border-radius: 15%;
+    border-color: #ffcc00;
+    border-style: double;
+    transition: 0.3s;
+}
+
+#navmenu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: linear-gradient(135deg, #333, #111);
+    padding-top: 80px;
+    transition: 0.5s;
+    z-index: 1000;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#navmenu.active {
+    right: 0;
+}
+
+#navmenu ul {
+    list-style: none;
+}
+
+#navmenu ul li {
+    margin: 20px 0;
+    padding: 0 30px;
+    list-style-type: none; 
+}
+
+#navmenu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 200%;
+    transition: all 0.3s;
+    position: relative;
+    padding: 5px 0;
+    display: block;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+
+}
+
+#navmenu ul li a:hover {
+    color: #ffcc00;
+}
+
+#navmenu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff9500, #ffcc00);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+#navmenu ul li a:hover::after {
+    width: 100%;
+}
+
+#lil{
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    color: aliceblue;
+    font-size: 250%;
+    font-weight: 150;
+}

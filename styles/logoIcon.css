@@ -1,0 +1,37 @@
+/* logoIcon */
+#whatsapp-button, #instagram-button, #linkedin-button, #youtube-button, #twitter-button {
+    background-color: #1b1b1b;
+    color: #ff9500;
+    padding: 10px;
+    border-radius: 10%;
+    font-size: 24px;  
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block;
+    
+}
+
+
+
+#whatsapp-button {
+    font-size: 22px;
+}
+
+#linkedin-button {
+    font-size: 21px;
+}
+
+#youtube1-button:hover, #twitter-button:hover, #facebook-button:hover, #whatsapp-button:hover, #linkedin-button:hover {
+    background-color: rgb(71, 71, 71);
+    color: #ffcc00;
+    transition: 0.5s;
+}
+
+#youtube-button {
+    font-size: 20px;
+}
+
+#twitter-button {
+    font-size: 20px;
+}

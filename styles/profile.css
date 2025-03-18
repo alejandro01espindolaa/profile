@@ -1,0 +1,22 @@
+#Profile {
+    display: flex;
+    justify-content: auto;
+    align-items: center;
+    height: 100vh; /* Ajusta según sea necesario */
+    padding: 1%;
+}
+
+#profilepic {
+    width: 200px; 
+
+    border-radius:10px; 
+    object-fit: cover; 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+    filter: brightness(0.8); 
+}
+
+/* Efecto al pasar el mouse */
+#profilepic:hover {
+    transform: scale(1.1); /* Zoom al 110% */
+    filter: brightness(1.1); /* Imagen más clara */
+}
