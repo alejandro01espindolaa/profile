@@ -117,3 +117,7 @@ body {
     font-size: 250%;
     font-weight: 150;
 }
+
+a{
+    color: none;
+}
