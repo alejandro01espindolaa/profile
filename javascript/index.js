@@ -5,6 +5,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
     // Toggle menu cuando se hace clic en el botón
     menubtn.addEventListener(`click`, () => {
         navmenu.classList.toggle(`active`);
+        menubtn.classList.toggle('active');
+        menubtn.textContent = menubtn.classList.contains('active') ? '✖' : '☰';
     });
 
     // Cerrar menú cuando se hace clic en un enlace
@@ -19,6 +21,8 @@ document.addEventListener(`DOMContentLoaded`, () => {
     window.addEventListener('scroll', function() {
         if (navmenu.classList.contains(`active`)) {
             navmenu.classList.remove(`active`);
+            menubtn.classList.toggle('active');
+            menubtn.textContent = menubtn.classList.contains('active') ? '✖' : '☰';
         }
     });
 

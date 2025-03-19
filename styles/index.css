@@ -90,10 +90,12 @@ body::-webkit-scrollbar-thumb {
 
 }
 
+/*menubtn*/
+
 #menubtn {
     color: white;
     background: #2b2b2b;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 2px double white;
     font-size: 2rem;
     font-family: "Alumni Sans Pinstripe", sans-serif;
@@ -108,11 +110,21 @@ body::-webkit-scrollbar-thumb {
 #menubtn:hover {
     color: #ffcc00;
     background-color: #444444;
-    border-radius: 15%;
+    border-radius: 15px;
     border-color: #ffcc00;
     border-style: double;
     transition: 0.5s;
 }
+
+
+
+
+#menubtn.active {
+    color: #ffcc00;
+    transform: rotate(180deg);
+}
+
+/*Nav*/
 
 #navmenu {
     position: fixed;
