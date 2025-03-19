@@ -29,6 +29,8 @@
     object-fit: cover;
     transition: transform 0.3s ease, filter 0.3s ease;
     filter: brightness(0.9);
+   
+
 }
 
 #profilepic:hover {
@@ -37,7 +39,7 @@
 }
 
 #Profile p {
-    padding-left: 10%; 
+    padding:1%; 
     flex: 1; /* Toma el espacio disponible pero permite que la lista también tome espacio */
     font-size: 1.2em;
     line-height: 1.6;
@@ -45,6 +47,9 @@
     text-align: justify;
     margin: 0;
     transition: transform 0.3s ease;
+    border-style: double;
+    border-radius: 15px;
+    padding-bottom: 5%;
 }
 
 #Profile p:hover {
@@ -55,19 +60,28 @@
     flex: 1; /* Toma el espacio restante disponible */
     align-self: stretch; /* Se estira para ocupar toda la altura */
     display: flex; /* Para contener la lista correctamente */
+    
 }
 
 #profile-list {
     width: 100%;
-    padding-left: 20%; /* Espacio para los bullets */
+    padding-left: 30%; /* Espacio para los bullets */
     margin: 0;
+    border-style: double;
+    border-radius: 15px;
+    color: #666;
+
 }
 
 #profile-list li {
-    color: rgb(77, 77, 77);
+    color: #666;
     list-style-type: disc;
     line-height: 1.6;
     margin-bottom: 8px;
+    font-family:Georgia, 'Times New Roman', Times, serif;    
+    font-size: 110%;
+
+    
 }
 
 #profile-list:hover {
