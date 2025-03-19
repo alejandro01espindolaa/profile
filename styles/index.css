@@ -3,13 +3,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     background: #1d1d1d;
     overflow-x: hidden;
     padding-top: 1%;
+    overflow-y: auto;
 }
+
+body::-webkit-scrollbar{
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent; /* Fondo transparente */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: orange; /* Scroll naranja */
+    border-radius: 10px;
+    border: 3px solid transparent; /* Para dar un efecto más limpio */
+    background-clip: padding-box;
+}
+
 
 #navbar {
     
@@ -53,10 +71,15 @@ body {
 }
 
 #estelar {
+    padding-left: 2%;
+    padding-right: 2%; 
     font-family: "Alumni Sans Pinstripe", sans-serif;
     color: white;
     font-size: 250%;
     font-weight: 150;
+    background-color: #ff9500;
+    border-radius: 10px;
+
 }
 
 #menubtn {
@@ -168,4 +191,8 @@ a::after{
     bottom: 0;
     left: 0;
     transition: width 0.3s ease;
+}
+
+h1{
+    font-family: "Alumni Sans Pinstripe", sans-serif;
 }

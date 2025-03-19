@@ -37,6 +37,7 @@
 }
 
 #Profile p {
+    padding-left: 10%; 
     flex: 1; /* Toma el espacio disponible pero permite que la lista también tome espacio */
     font-size: 1.2em;
     line-height: 1.6;

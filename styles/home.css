@@ -1,0 +1,93 @@
+/* Estilos para la sección Home */
+#Home {
+    position: relative;
+    min-height: 100vh;
+    padding: 5% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Este es el enfoque correcto para que la imagen solo aparezca en la sección Home */
+#bghome {
+    position: absolute; /* Cambiado de fixed a absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -2; /* Un nivel por debajo del overlay */
+    opacity: 0.3;
+}
+
+/* Capa oscura para mejorar la legibilidad del texto */
+#Home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 29, 29, 0.5);
+    z-index: -1;
+}
+
+#Home h1, #Home h2 {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    margin-bottom: 20px;
+}
+
+#Home h1 {
+    font-size: 350%;
+    font-weight: 200;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#Home h2 {
+    font-size: 250%;
+    font-weight: 150;
+    color: #ff9500;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+#Home h2:last-child {
+    color: #ffcc00;
+}
+
+/* Animación opcional para mejorar la presentación */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#Home h1, #Home h2 {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+#Home h2:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+#Home h2:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    #Home h1 {
+        font-size: 250%;
+    }
+    
+    #Home h2 {
+        font-size: 200%;
+    }
+}
