@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #2a2a2a;
+    background: #1d1d1d;
     overflow-x: hidden;
     padding-top: 1%;
 }
@@ -18,25 +18,54 @@ body {
     background: linear-gradient(170deg, #000000, #2b2b2b);
     padding: 1%;
     border-style: double;
-    border-color: aliceblue;  
+    border-color: white;  
     border-radius: 15px;
+}
+
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+}
+
+#navbar a:hover {
+    color: #ffcc00;
+    transition: width 0.5s;
+}
+
+#navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ffcc00;
+    color: #ffcc00;
+    left: 0;
+    bottom: 0;
+    transition: width 0.5s;
+}
+
+#navbar a:hover::after {
+    width: 100%;
 }
 
 #estelar {
     font-family: "Alumni Sans Pinstripe", sans-serif;
-    color: aliceblue;
+    color: white;
     font-size: 250%;
     font-weight: 150;
 }
 
 #menubtn {
-    color: aliceblue;
+    color: white;
     background: #2b2b2b;
     border-radius: 10px;
-    border: 2px double aliceblue;
+    border: 2px double white;
     font-size: 2rem;
     font-family: "Alumni Sans Pinstripe", sans-serif;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     padding: 10px 15px;
     z-index: 1001;
     cursor: pointer;
@@ -50,7 +79,7 @@ body {
     border-radius: 15%;
     border-color: #ffcc00;
     border-style: double;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 #navmenu {
@@ -113,11 +142,29 @@ body {
 
 #lil{
     font-family: "Alumni Sans Pinstripe", sans-serif;
-    color: aliceblue;
+    color: white;
     font-size: 250%;
     font-weight: 150;
 }
 
 a{
-    color: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: #ffcc00;
+    transition: all 0.6s;
+
+}
+
+a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff9500, #ffcc00);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
 }

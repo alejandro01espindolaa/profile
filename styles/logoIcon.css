@@ -1,6 +1,5 @@
 /* logoIcon */
-#whatsapp-button, #instagram-button, #linkedin-button, #youtube-button, #twitter-button {
-    background-color: #1b1b1b;
+#whatsapp-button, #github-button, #linkedin-button, #email-button, #file-button {
     color: #ff9500;
     padding: 10px;
     border-radius: 10%;
@@ -9,7 +8,6 @@
     text-decoration: none;
     margin-right: 10px;
     display: inline-block;
-    
 }
 
 
@@ -22,10 +20,24 @@
     font-size: 21px;
 }
 
-#youtube1-button:hover, #twitter-button:hover, #facebook-button:hover, #whatsapp-button:hover, #linkedin-button:hover {
-    background-color: rgb(71, 71, 71);
+
+#email-button {
+    font-size: 21px;
+}
+
+#linkedin-button{
+    font-size: 21px;
+}
+
+#file-button{
+    font-size: 21px;
+}
+
+
+#email-button:hover, #github-button:hover, #file-button:hover, #whatsapp-button:hover, #linkedin-button:hover {
     color: #ffcc00;
-    transition: 0.5s;
+    transition: 0.6s;
+    padding: 1%;
 }
 
 #youtube-button {
