@@ -82,6 +82,14 @@ body::-webkit-scrollbar-thumb {
 
 }
 
+#estelar:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    font-weight: bold;
+    transition: .5s;
+
+}
+
 #menubtn {
     color: white;
     background: #2b2b2b;
@@ -195,5 +203,5 @@ a::after{
 
 h1{
     font-family: "Alumni Sans Pinstripe", sans-serif;
-    
+
 }
