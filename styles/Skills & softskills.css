@@ -6,8 +6,16 @@
 }
 
 /* Sección Habilidades */
+/* Reset básico solo para la sección de skills */
+#skills * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sección Habilidades */
 #skills {
-  padding: 50px 20px;
+  padding: 60px 20px;
   background-color: rgb(29, 29, 29);
   min-height: 100vh; /* Ocupa al menos el alto completo de la ventana */
 }
@@ -22,13 +30,13 @@
 
 #skills .section-title {
   font-family: "Alumni Sans Pinstripe", sans-serif;
-  font-size: 2.5em;
+  font-size: 3em;  /* Tamaño incrementado */
   text-align: center;
   margin-bottom: 40px;
   color: #ffcc00;
 }
 
-/* Estilos para los grupos de habilidades */
+/* Estilos para los grupos de habilidades (divs) */
 #skills .skills-group {
   display: flex;
   flex-direction: column;
@@ -36,13 +44,14 @@
   border-style: double;
   color: #ffcc00;
   border-radius: 15px;
-  padding: 15px;
+  padding: 25px;  /* Aumenta el espacio interno */
   height: 100%;
+  min-height: 200px; /* Define un alto mínimo para que se vea más grande */
 }
 
 #skills .group-title {
   font-family: "Alumni Sans Pinstripe", sans-serif;
-  font-size: 1.8em;
+  font-size: 2.2em;  /* Tamaño de título incrementado */
   margin-bottom: 15px;
   border-bottom: 2px solid #ffcc00;
   display: inline-block;
@@ -64,7 +73,7 @@
   background-color: #f0f0f0;
   padding: 10px 20px;
   border-radius: 25px;
-  font-size: 1em;
+  font-size: 1.2em;  /* Aumenta el tamaño de la fuente en cada badge */
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
   color: #333;
   cursor: default;
@@ -75,6 +84,23 @@
   color: #fff;
   transform: scale(1.15);
   transition: 0.4s;
+}
+
+/* Estilo para la sección de Metodologías y protocolos */
+#skills .metodologias-container {
+  max-width: 800px; /* Ancho máximo más pequeño que la sección principal */
+  margin: 40px auto 0 auto; /* Margen superior e inferior, y centrado horizontal */
+}
+
+#skills .metodologias-container .skills-group {
+  margin-bottom: 0; /* Elimina el margen inferior para esta sección */
+  border-color: #ff9500; /* Borde en color diferente para distinguirlo */
+  background-color: rgba(51, 51, 51, 0.5); /* Fondo ligeramente diferente */
+}
+
+#skills .metodologias-container .group-title {
+  text-align: center;
+  margin: 0 auto 15px auto; /* Para centrar el título */
 }
 
 /* Media Query para pantallas grandes */
