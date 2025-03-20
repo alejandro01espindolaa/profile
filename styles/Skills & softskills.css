@@ -1,0 +1,92 @@
+/* Reset básico solo para la sección de skills */
+#skills * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sección Habilidades */
+#skills {
+  padding: 50px 20px;
+  background-color: rgb(29, 29, 29);
+  min-height: 100vh; /* Ocupa al menos el alto completo de la ventana */
+}
+
+#skills .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+#skills .section-title {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffcc00;
+}
+
+/* Estilos para los grupos de habilidades */
+#skills .skills-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  border-style: double;
+  color: #ffcc00;
+  border-radius: 15px;
+  padding: 15px;
+  height: 100%;
+}
+
+#skills .group-title {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffcc00;
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #ff9500;
+}
+
+/* Lista de habilidades (badges) */
+#skills .skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#skills .skills-list li {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1em;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  color: #333;
+  cursor: default;
+}
+
+#skills .skills-list li:hover {
+  background-color: #ffcc00;
+  color: #fff;
+  transform: scale(1.15);
+  transition: 0.4s;
+}
+
+/* Media Query para pantallas grandes */
+@media (min-width: 768px) {
+  #skills .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Hace que el título se extienda a las 3 columnas */
+  #skills .section-title {
+    grid-column: span 3;
+    background-color: #333;
+    border-radius: 30px;
+  }
+}

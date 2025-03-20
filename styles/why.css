@@ -1,0 +1,79 @@
+/* Importar la fuente ya se hace en el HTML */
+
+/* Estilos para la sección Why Me? */
+#why-me {
+    padding: 50px 20px;
+    background: #d3d2d2;
+  }
+  
+  #why-me .section-title {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  #why-me .subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  #why-me .milestones {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  #why-me .milestone {
+    flex: 1 1 200px;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  #why-me .milestone .icon {
+    font-size: 3em;
+    color: #ffcc00; /* Color de los íconos */
+    margin-bottom: 10px;
+  }
+  
+  #why-me .milestone .milestone-title {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  #why-me .milestone .milestone-value {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  #why-me .section-subtitle {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  #why-me ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #why-me li {
+    font-size: 1em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #why-me li .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #ffcc00; /* Color de los íconos en las listas */
+  }
+  
