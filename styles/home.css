@@ -84,6 +84,8 @@ body {
     animation: fadeIn 1s ease-out forwards;
 }
 
+home
+
 #Home h2:nth-child(2) {
     animation-delay: 0.3s;
 }

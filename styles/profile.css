@@ -29,7 +29,6 @@
     object-fit: cover;
     transition: transform 0.3s ease, filter 0.3s ease;
     filter: brightness(0.9);
-   
 
 }
 
@@ -58,10 +57,10 @@
 }
 
 #profile-list-container {
-    flex: 1; /* Toma el espacio restante disponible */
-    align-self: stretch; /* Se estira para ocupar toda la altura */
-    display: flex; /* Para contener la lista correctamente */
-    
+    flex: 1; /* Toma el espacio restante disponible /
+    align-self: stretch; / Se estira para ocupar toda la altura /
+    display: flex; / Para contener la lista correctamente */
+
 }
 
 #profile-list {
@@ -83,7 +82,6 @@
     font-family:Georgia, 'Times New Roman', Times, serif;    
     font-size: 110%;
 
-    
 }
 
 #profile-list:hover {
@@ -101,11 +99,11 @@
     #profilepic {
         margin-bottom: 20px;
     }
-    
+
     #profile-list-container {
         width: 100%;
     }
-    
+
     #profile-list {
         padding-left: 20px;
         text-align: left;
@@ -144,11 +142,11 @@ button:hover{
     gap: 20px;
 }
 
-#data-list1{
-    padding-top: 5%;
-    flex: 2; /* Toma el espacio restante disponible */
-    align-self: stretch; /* Se estira para ocupar toda la altura */
-    display:flex; /* Para contener la lista correctamente */
+#data-list1 {
+    width: 100%;
+    padding-left: 20px; /* Space for bullets */
+    margin: 0;
+    list-style-type: disc;
 }
 #pdata{
     width: 100%;
@@ -159,3 +157,66 @@ button:hover{
     color: #666;
     padding-top: 2%;
 }
+
+/* Style for the profile-content2 section */
+.profile-content2 {
+    max-width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch; /* Make them the same height */
+    gap: 20px;
+}
+
+/* Style for the data containers */
+#pdata {
+    flex: 1;
+    border-style: double;
+    border-radius: 15px;
+    color: #666;
+    padding: 2% 4%;
+    transition: transform 0.3s ease;
+}
+
+#pdata:hover {
+    transform: scale(1.02);
+}
+
+
+/* Style for the data lists */
+#data-list, #data-list1 {
+    width: 100%;
+    padding-left: 20px; /* Space for bullets */
+    margin: 0;
+    list-style-type: disc;
+}
+
+/* Style for list items */
+#data-list li, #data-list1 li {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 110%;
+    display: list-item; /* Ensure it displays as a list item */
+}
+
+/* Style for data labels */
+.datat {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .profile-content2 {
+        flex-direction: column;
+    }
+    
+    #pdata {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
