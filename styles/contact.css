@@ -1,0 +1,84 @@
+/* Sección de Contacto */
+#contacto {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 60px 20px;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 1.7em;
+
+  }
+  
+  .contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .titulo-seccion {
+    font-size: 2.5em;
+    color: #ffcc00;
+    margin-bottom: 40px;
+  }
+  
+  .informacion-contacto {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .detalle-contacto h3 {
+    color: #ff9500;
+    margin-bottom: 10px;
+        font-size: 1.3em;
+
+  }
+  
+  .detalle-contacto p {
+    margin: 0;
+
+  }
+  
+  form {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .campo-formulario {
+
+    margin-bottom: 1.2em;
+    text-align: left;
+  }
+  
+  .campo-formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffcc00;
+  }
+  
+  .campo-formulario input,
+  .campo-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff9500;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  #btncontact {
+    background-color: #ff9500;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  #btncontact:hover {
+    background-color: #ffcc00;
+  }
+  

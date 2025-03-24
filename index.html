@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alejandro Espindola Portfolio</title>
      
      <!-- Icons-->
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="styles/Skills & softskills.css">
     <link rel="stylesheet" href="styles/proyectos.css">
     <link rel="stylesheet" href="styles/skillsbar.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/fortalezas.css">
+    <link rel="stylesheet" href="styles/trayectoria.css">
+
 
     
 </head>
@@ -43,7 +47,7 @@
                 <li><a href="">Trayectoria</a></li>
                 <li><a href="#skills">Habilidades & Habilidades blandas</a></li>
                 <li><a href="">Metas</a></li>
-                <li><a href="">contacto</a></li>
+                <li><a href="#contacto">contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -54,55 +58,130 @@
         <h1 id="IM">
             Mi Nombre es Alejandro Espindola
         </h1>
-        <h2>FullStack Java Developer Jr</h2>
-        <h2>Tech Support Engineer L1 & L1.5</h2>
+
+        <span class="typed"></span>
+
+        
         <button><a href="#Profile">Conoce mas</a></button>
     </div>
 
     <!-- Profile  -->
+   <section class="Profile-Section">
     <div id="Profile">
-        <h1>Acerca de mi</h1>
-        <div class="profile-content">
-            <img src="images/personal-images/Capture.PNG" alt="Foto de perfil" id="profilepic">
-            <p>
-                Soy un ingeniero de soporte técnico con más de cinco años de experiencia en la resolución de problemas complejos de TI. Mi trayectoria profesional abarca roles en empresas como ATT, Tech Mahindra, Tata Consultancy Services y GBS, donde he brindado soporte técnico, gestionado tickets y colaborado con equipos diversos. Poseo habilidades en herramientas como AirWatch, Azure AD, Splunk, Postman y Jamf Active Directory, además de experiencia en desarrollo web con JavaScript/Node.js, MySQL, HTML, CSS y PHP.
-            </p>
-            <div id="profile-list-container">
-                <ul id="profile-list">
-                    <li>Ingeniero de Soporte Técnico</li>
-                    <li>Desarrollador Fullstack Java Jr.</li>
-                    <li>Especialista en Atención al Cliente</li>
-                    <li>Responsabilidad del inventario físico</li>
-                    <li>Responsabilidad del inventario de software</li>
-                    <li>Help Desk Nivel 1, Nivel 1.5 y Nivel 2</li>
-                    <li>Soporte de TI en sitio</li>
-                    <li>Soporte Bilingüe</li>
-                </ul>
+        <div id="profile-pad">
+            <h1>Acerca de mi</h1>
+            <div class="profile-content">
+                <img src="images/personal-images/Capture.PNG" alt="Foto de perfil" id="profilepic">
+                <p>
+                    Soy un ingeniero de soporte técnico con más de cinco años de experiencia en la resolución de problemas complejos de TI. Mi trayectoria profesional abarca roles en empresas como ATT, Tech Mahindra, Tata Consultancy Services y GBS, donde he brindado soporte técnico, gestionado tickets y colaborado con equipos diversos. Poseo habilidades en herramientas como AirWatch, Azure AD, Splunk, Postman y Jamf Active Directory, además de experiencia en desarrollo web con JavaScript/Node.js, MySQL, HTML, CSS y PHP.
+                </p>
+                <div id="profile-list-container">
+                    <ul id="profile-list">
+                        <li>Ingeniero de Soporte Técnico</li>
+                        <li>Desarrollador Fullstack Java Jr.</li>
+                        <li>Especialista en Atención al Cliente</li>
+                        <li>Responsabilidad del inventario físico</li>
+                        <li>Responsabilidad del inventario de software</li>
+                        <li>Help Desk Nivel 1, Nivel 1.5 y Nivel 2</li>
+                        <li>Soporte de TI en sitio</li>
+                        <li>Soporte Bilingüe</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-
-                <div class="profile-content2">
-                    <div id="pdata">
-                        <ul id="data-list">
-                            <li><span class="datat">Idiomas:</span> Español, Inglés</li>
-                            <li><span class="datat">Cargos y carrera:</span> Ing Soporte tecnico, Helpdesk L1 & L1.5</li>
-                            <li><span class="datat">Numero de contacto:</span> +52 9616985795</li>
-                            <li><span class="datat">Nacionalidad:</span> Mexicana</li>
-                        </ul>
-                    </div>
-                    <div id="pdata">
-                        <ul id="data-list1">
-                            <li><span class="datat">Ubicacion:</span> Ecatepec estado de Mexico</li>
-                            <li><span class="datat">Edad:</span> 30 años</li>
-                            <li><span class="datat">Disponibilidad:</span> Inmediata</li>
-                            <li><span class="datat">Estado civil:</span> Casado</li>
-                        </ul>
+    
+                    <div class="profile-content2">
+                        <div id="pdata">
+                            <ul id="data-list">
+                                <li><span class="datat">Idiomas:</span> Español, Inglés</li>
+                                <li><span class="datat">Cargos y carrera:</span> Ing Soporte tecnico, Helpdesk L1 & L1.5</li>
+                                <li><span class="datat">Numero de contacto:</span> +52 9616985795</li>
+                                <li><span class="datat">Nacionalidad:</span> Mexicana</li>
+                            </ul>
+                        </div>
+                        <div id="pdata">
+                            <ul id="data-list1">
+                                <li><span class="datat">Ubicacion:</span> Ecatepec estado de Mexico</li>
+                                <li><span class="datat">Edad:</span> 30 años</li>
+                                <li><span class="datat">Disponibilidad:</span> Inmediata</li>
+                                <li><span class="datat">Estado civil:</span> Casado</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+   </section>
+
+        <!-- Trayectoria -->
+
+
+   <section id="Trayectoria">
+    <div class="contenedor">
+      <div id="contenedorc">
+        <h2 class="titulo-seccionc">Mi Currículum</h2>
+      <div class="experiencia">
+        <h3>GBS </h3>
+        <p>Agosto 2018 - Presente</p>
+        <p>Descripción breve de tus responsabilidades y logros.</p>
+      </div>
+
+      <div class="experiencia">
+        <h3>Tata Consultancy Services</h3>
+        <p>Julio 2022 - Agosto 2023</p>
+        <p>Descripción breve de tus responsabilidades y logros.</p>
+      </div>
+      </div>
+      <!-- Agrega más experiencias según sea necesario -->
+    </div>
+  </section>
+
+     <!-- Fortalezas -->
+
+
+
+   <section id="fortalezas">
+    <div class="contenedor">
+      <h2 class="titulo-seccion">Mis Fortalezas</h2>
+      <div class="fortaleza">
+        <h3>Comunicación</h3>
+        <div class="barra-progreso">
+          <div class="nivel" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="fortaleza">
+        <h3>Confianza</h3>
+        <div class="barra-progreso">
+          <div class="nivel" style="width: 92%;"></div>
+        </div>
+      </div>
+      
+      <div class="fortaleza">
+        <h3>Adaptabilidad</h3>
+        <div class="barra-progreso">
+          <div class="nivel" style="width: 92%;"></div>
+        </div>
+      </div>
+
+      <div class="fortaleza">
+        <h3>Atención al Detalle</h3>
+        <div class="barra-progreso">
+          <div class="nivel" style="width: 92%;"></div>
+        </div>
+      </div>
+
+      <div class="fortaleza">
+        <h3>Confianza</h3>
+        <div class="barra-progreso">
+          <div class="nivel" style="width: 92%;"></div>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+  </section>
 
     <!-- Skills and SoftSkills -->
     <section id="skills">
@@ -219,6 +298,13 @@
                           <div class="skill-bar">
                             <div class="skill-level" style="width: 80%;"></div>
                           </div>
+
+                          
+                          <li>C++</li>
+                          <div class="skill-bar">
+                            <div class="skill-level" style="width: 73%;"></div>
+                          </div>
+
                   
                           <li>MySQL</li>
                           <div class="skill-bar">
@@ -226,25 +312,95 @@
                           </div>
                         </ul>
                       </div>
-                      <div class="skills-group1">
-                        <h3 class="group-title1">Frameworks y Librerías</h3>
-                        <ul class="skills-list1">
-                          <li>React</li>
-                          <div class="skill-bar">
-                            <div class="skill-level" style="width: 60%;"></div>
-                          </div>
-                  
-                          <li>Angular</li>
-                          <div class="skill-bar">
-                            <div class="skill-level" style="width: 50%;"></div>
-                          </div>
-                  
-                          <li>Spring Boot</li>
-                          <div class="skill-bar">
-                            <div class="skill-level" style="width: 70%;"></div>
-                          </div>
-                        </ul>
-                      </div>
+                        <div class="skills-group1">
+                            <h3 class="group-title1">Frameworks y Librerías</h3>
+                            <ul class="skills-list1">
+                            <li>React</li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 60%;"></div>
+                            </div>
+                    
+                            <li>Angular</li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 50%;"></div>
+                            </div>
+                    
+                            <li>Spring Boot</li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%;"></div>
+                            </div>
+
+                            <li>VS Code</li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+
+                            <li>IntelliJ</li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+
+                            <li>flex</li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+
+                            <li>Bootstrap</li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+
+                            </ul>
+                        </div>
+
+                        <div class="skills-group1">
+                            <h3 class="group-title1">IT tools</h3>
+                            <ul class="skills-list1">
+                            <li>Service Now</li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 60%;"></div>
+                            </div>
+                    
+                            <li>Splunk</li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 50%;"></div>
+                            </div>
+                    
+                            <li>AirWatch</li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+
+                            <li>Jamf</li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%;"></div>
+                            </div>
+
+                            <li>Git & Github </li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+
+
+                            <li>Jira</li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 65%;"></div>
+                            </div>
+
+                            <li>Postman</li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 73%;"></div>
+                            </div>
+
+                            <li>Canva</li>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 79%;"></div>
+                            </div>
+
+                          
+
+                            </ul>
+                        </div>
                     </div>
                   </section>
                   
@@ -273,7 +429,7 @@
           <div class="project">
             
             <div class="project-image">
-              <img src="ruta-a-la-imagen-del-proyecto2.jpg" alt="Foro Hub">
+              <img src="ruta-a-la-imagen-del-proyecto2.jpg" alt="Pocket Sports">
             </div>
             <div class="project-details">
               <h3 class="project-title">Pocket Sports</h3>
@@ -286,7 +442,7 @@
     
           <div class="project">
             <div class="project-image">
-              <img src="ruta-a-la-imagen-del-proyecto3.jpg" alt="Barbería Alura">
+              <img src="ruta-a-la-imagen-del-proyecto3.jpg" alt="Celest Academy">
             </div>
             <div class="project-details">
               <h3 class="project-title">Celest Academy</h3>
@@ -306,13 +462,14 @@
     <section id="why-me">
         <div class="container">
           <h2 class="section-title">¿Por que Alejandro?</h2>
-          <p class="subtitle">Throw me to the wolves and I will return leading the pack.</p>
+          <p class="subtitle">"La innovación es lo que distingue a un líder de un seguidor."
+        </p>
           
           <div class="milestones">
             <div class="milestone">
               <i class="icon fas fa-clock"></i>
               <h3 class="milestone-title">Horas trabajadas</h3>
-              <p class="milestone-value" id="hoursWorked">7876</p>
+              <p class="milestone-value" id="hoursWorked">7610</p>
             </div>
             <div class="milestone">
               <i class="icon fas fa-project-diagram"></i>
@@ -322,12 +479,11 @@
             <div class="milestone">
               <i class="icon fas fa-certificate"></i>
               <h3 class="milestone-title">Cursos y Certificaciones</h3>
-              <p class="milestone-value" id="awards">18</p>
+              <p class="milestone-value" id="awards">16</p> 
             </div>
             <div class="milestone">
               <i class="icon fas fa-user"></i>
               <h3 class="milestone-title">User & Customer </h3>
-              <p class="milestone-value" id="blogPosts">Expertise</p>
             </div>
           </div>
           
@@ -345,12 +501,46 @@
         
           
           <div class="achievements">
-            <h3 class="section-subtitle">Achievements</h3>
+            <h3 class="section-subtitle">Logros</h3>
             <ul>
               <li><i class="icon fas fa-check"></i> impelementacion de ia local mediante clusters, uso local mediante APIs </li>
               <li><i class="icon fas fa-check"></i> creacion de paginas Web en tiempo record</li>
             </ul>
           </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+
+
+      <section id="contacto">
+        <div class="contenedor">
+          <h2 class="titulo-seccion">Contáctame</h2>
+          <div class="informacion-contacto">
+            <div class="detalle-contacto">
+              <h3>Email</h3>
+              <p>alejandro01espindolaa@gmail.com</p>
+            </div>
+            <div class="detalle-contacto">
+              <h3>Teléfono</h3>
+              <p>+52 1 961 698 5795</p>
+            </div>
+          </div>
+          <form id="formulario-contacto">
+            <div class="campo-formulario">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="campo-formulario">
+              <label for="correo">Correo Electrónico</label>
+              <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="campo-formulario">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" id="btncontact">Enviar</button>
+          </form>
         </div>
       </section>
 
@@ -397,10 +587,16 @@
             </div>
         </div>
     </footer>
+
+    
     
     <!-- JS -->
     <script src="javascript/index.js"></script>
     <script src="javascript/why.js"></script>
     <script src="javascript/Skills.js"></script>
+    <script src="javascript/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="javascript/home.js"></script>
+
 </body>
 </html>

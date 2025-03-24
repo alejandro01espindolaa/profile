@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #fortalezas{
+    background-color: #1a1a1a;
+
+  }
+
+  .contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+  
+  .titulo-seccion {
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+
+  }
+  
+  .fortaleza, .experiencia, .institucion {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 1.8em;
+
+  }
+  
+  .fortaleza h3, .experiencia h3, .institucion h3 {
+    color: #ff9500;
+    margin-bottom: 10px;
+  }
+  
+  .barra-progreso {
+    background-color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 20px;
+  }
+  
+  .nivel {
+    height: 100%;
+    background-color: #ffcc00;
+    width: 0;
+    transition: width 1s ease-in-out;
+  }
+  

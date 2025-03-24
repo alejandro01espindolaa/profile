@@ -9,6 +9,7 @@
     align-items: center;
     text-align: center;
     overflow: hidden;
+    
 }
 
 /* Este es el enfoque correcto para que la imagen solo aparezca en la sección Home */
@@ -128,3 +129,30 @@ button:hover{
     border-style: double;
     transition: 0.5s;
 }
+
+
+
+
+ .typed{
+ /* Negro */
+    color: #ffcc00; /* Blanco */
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width:  75vh;
+
+    margin: 0;
+ }
+  
+ .typed-cursor {
+    color: #ffcc00;  /* Color del cursor para que coincida con su diseño */
+    font-weight: bold;
+}
+
+
+
+
+

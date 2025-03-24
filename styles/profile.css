@@ -1,7 +1,15 @@
+#profile-pad{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 #Profile {
-    max-width: 95%;
+    max-width: 100%;
     margin: 20px auto;
-    padding: 2%;
+    
+    padding: 4%;
+    padding-left: 15%;
+    padding-right: 15%;
     background-color: #b4b4b4;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -10,10 +18,7 @@
 #Profile h1 {
     font-size: 2.5em;
     color: #333;
-    text-align: center;
-    margin-bottom: 20px;
 }
-
 .profile-content {
     max-width: 100%;
     margin: 0 auto;

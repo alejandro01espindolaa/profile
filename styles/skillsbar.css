@@ -1,3 +1,8 @@
+h1{
+    text-align: center;
+
+}
+
 #skills1 {
     padding: 60px 20px;
     background-image: url('images/bg/animacion-datos-1.gif');
@@ -13,14 +18,15 @@
     margin: 0 auto;
     text-align: center;
   }
-  
+
+
   .section-title1 {
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 40px;
-    color: #ffcc00;
+    color: #4d4d4d; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: #4d4d4d;
+    background-color:  #ff9500;
     border-radius: 15px;
   }
   
@@ -30,8 +36,12 @@
     color: #dadada;
     border-radius: 15px;
     padding: 1%;
+    
   }
-  
+
+
+
+ 
   .group-title1 {
     font-size: 1.8em;
     margin-bottom: 15px;
@@ -40,12 +50,18 @@
     display: inline-block;
     padding-bottom: 5px;
   }
+
+
   
+
   .skills-list1 {
     list-style: none;
     padding: 0;
     gap: 10px;
   }
+
+
+
   
   .skills-list1 li {
     color: #fff;
@@ -76,3 +92,16 @@
     }
   }
   
+
+
+  #bghome {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: -2;
+    opacity: 0.3;
+}
