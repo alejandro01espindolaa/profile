@@ -1,0 +1,78 @@
+#skills1 {
+    padding: 60px 20px;
+    background-image: url('images/bg/animacion-datos-1.gif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+  }
+  
+  .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-title1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #4d4d4d;
+    border-radius: 15px;
+  }
+  
+  .skills-group1 {
+    margin-bottom: 30px;
+    border-style: double;
+    color: #dadada;
+    border-radius: 15px;
+    padding: 1%;
+  }
+  
+  .group-title1 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #ff9500;
+    border-bottom: 2px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .skills-list1 {
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+  }
+  
+  .skills-list1 li {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 2em;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .skill-bar {
+    background-color: #333333;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 1%;
+  }
+  
+  .skill-level {
+    height: 20px;
+    background-color: #ffcc00;
+    width: 0;
+    transition: width 1s ease-in-out;
+    border-radius: 15px;
+  }
+  
+  @media (min-width: 768px) {
+    .skills-list1 {
+      justify-content: center;
+    }
+  }
+  

@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/why.css">
     <link rel="stylesheet" href="styles/Skills & softskills.css">
+    <link rel="stylesheet" href="styles/proyectos.css">
+    <link rel="stylesheet" href="styles/skillsbar.css">
 
     
 </head>
@@ -39,7 +41,7 @@
                 <li><a href="#Profile">Perfil</a></li>
                 <li><a href="">Carrera</a></li>
                 <li><a href="">Trayectoria</a></li>
-                <li><a href="">Habilidades & Habilidades blandas</a></li>
+                <li><a href="#skills">Habilidades & Habilidades blandas</a></li>
                 <li><a href="">Metas</a></li>
                 <li><a href="">contacto</a></li>
             </ul>
@@ -178,62 +180,175 @@
         </div>
     </section>
 
-    <!-- Skills and SoftSkills -->
+
+                  <!-- Skills bar -->
+
+
+                  <section id="skills1">
+                    <div class="container1">
+                      <h2 class="section-title1">Nivel de Habilidades</h2>
+                      <div class="skills-group1">
+                        <h3 class="group-title1">Lenguajes de Programación</h3>
+                        <ul class="skills-list1">
+                          <li>JavaScript</li>
+                          <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                          </div>
+                  
+                          <li>CSS</li>
+                          <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                          </div>
+                  
+                          <li>HTML</li>
+                          <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                          </div>
+                  
+                          <li>Python</li>
+                          <div class="skill-bar">
+                            <div class="skill-level" style="width: 50%;"></div>
+                          </div>
+                  
+                          <li>Java</li>
+                          <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                          </div>
+                  
+                          <li>PHP</li>
+                          <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                          </div>
+                  
+                          <li>MySQL</li>
+                          <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                          </div>
+                        </ul>
+                      </div>
+                      <div class="skills-group1">
+                        <h3 class="group-title1">Frameworks y Librerías</h3>
+                        <ul class="skills-list1">
+                          <li>React</li>
+                          <div class="skill-bar">
+                            <div class="skill-level" style="width: 60%;"></div>
+                          </div>
+                  
+                          <li>Angular</li>
+                          <div class="skill-bar">
+                            <div class="skill-level" style="width: 50%;"></div>
+                          </div>
+                  
+                          <li>Spring Boot</li>
+                          <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
+                  </section>
+                  
+      
+
+    <!-- Proyectos -->
+
+    <section id="proyectos">
+     
+        <div class="container">
+          <h2 class="section-title">Proyectos</h2>
     
+          <div class="project">
+            <div class="project-image">
+              <img src="ruta-a-la-imagen-del-proyecto1.jpg" alt="Restaurante Bar 'El Estudiante'">
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Restaurante Bar "El Estudiante"</h3>
+              <p class="project-description">
+                Desarrollo de una página web para un restaurante bar, dentro de un equipo de desarrolladores, usando metodología SCRUM.
+              </p>
+              <p class="project-technologies">Tecnologías: HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+    
+          <div class="project">
+            
+            <div class="project-image">
+              <img src="ruta-a-la-imagen-del-proyecto2.jpg" alt="Foro Hub">
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Pocket Sports</h3>
+              <p class="project-description">
+                Realización de una API REST bajo el modelo CRUD para la creación de un foro, en el cual los usuarios puedan hacer post, editarlos, visualizarlos y eliminarlos, guardándolos en una base de datos en MySQL.
+              </p>
+              <p class="project-technologies">Tecnologías: Java, Spring Boot, MySQL</p>
+            </div>
+          </div>
+    
+          <div class="project">
+            <div class="project-image">
+              <img src="ruta-a-la-imagen-del-proyecto3.jpg" alt="Barbería Alura">
+            </div>
+            <div class="project-details">
+              <h3 class="project-title">Celest Academy</h3>
+              <p class="project-description">
+                Proyecto de una página web de una escuela digital, enfocándose en el front end, utilizando Visual Studio Code como editor de código. Herramientas
+                utilizadas: HTML, CSS, JS, JAVA, Clusters con Mac OS y arquitectura ARM.
+              </p>
+              <p class="project-technologies">Tecnologías: HTML, CSS, JS, Java </p>
+            </div>
+          </div>
+    
+        </div>
+      </section>
+
 
     <!-- Why me? -->
     <section id="why-me">
         <div class="container">
-          <h2 class="section-title">Why Me?</h2>
+          <h2 class="section-title">¿Por que Alejandro?</h2>
           <p class="subtitle">Throw me to the wolves and I will return leading the pack.</p>
           
           <div class="milestones">
             <div class="milestone">
               <i class="icon fas fa-clock"></i>
-              <h3 class="milestone-title">Hours Worked</h3>
+              <h3 class="milestone-title">Horas trabajadas</h3>
               <p class="milestone-value" id="hoursWorked">7876</p>
             </div>
             <div class="milestone">
               <i class="icon fas fa-project-diagram"></i>
-              <h3 class="milestone-title">Successful Projects</h3>
+              <h3 class="milestone-title">Projectos y habilidades</h3>
               <p class="milestone-value" id="projects">24</p>
             </div>
             <div class="milestone">
-              <i class="icon fas fa-award"></i>
-              <h3 class="milestone-title">Awards Won</h3>
-              <p class="milestone-value" id="awards">16</p>
+              <i class="icon fas fa-certificate"></i>
+              <h3 class="milestone-title">Cursos y Certificaciones</h3>
+              <p class="milestone-value" id="awards">18</p>
             </div>
             <div class="milestone">
-              <i class="icon fas fa-blog"></i>
-              <h3 class="milestone-title">Blog Posts</h3>
-              <p class="milestone-value" id="blogPosts">86</p>
+              <i class="icon fas fa-user"></i>
+              <h3 class="milestone-title">User & Customer </h3>
+              <p class="milestone-value" id="blogPosts">Expertise</p>
             </div>
           </div>
           
           <div class="certifications">
             <h3 class="section-subtitle">Certifications</h3>
             <ul>
-              <li><i class="icon fas fa-certificate"></i> Responsive Web Design Certification - freeCodeCamp</li>
-              <li><i class="icon fas fa-certificate"></i> Oracle Certified Professional, Java SE6 Programmer</li>
-              <!-- Agrega más certificaciones según convenga -->
+              <li><i class="icon fas fa-certificate"></i> JavaScript TOTAL - De Cero a Programador Web </li>
+              <li><i class="icon fas fa-certificate"></i> Curso de Diseño Web: HTML y CSS desde cero hasta avanzado.</li>
+              <li><i class="icon fas fa-certificate"></i> The Complete English Grammar Course - from A1 to C1 level</li>
+              <li><i class="icon fas fa-certificate"></i> PHP y MySQL </li>
+              <li><i class="icon fas fa-certificate"></i> Bases de Datos, MySQL, teoría y práctica, Lenguaje SQL completo, Base de datos MySQL, Diagrama EER, AWS RDS, Cloud </li>
             </ul>
           </div>
           
-          <div class="awards">
-            <h3 class="section-subtitle">Awards</h3>
-            <ul>
-              <li><i class="icon fas fa-trophy"></i> KUDOS Awards (Jul y Nov 2014) - Quality Interaction with Clients</li>
-              <li><i class="icon fas fa-trophy"></i> SHINING STAR Award (Q1 2014) - Efficiency in leading the Team</li>
-              <!-- Agrega más premios según convenga -->
-            </ul>
-          </div>
+        
           
           <div class="achievements">
             <h3 class="section-subtitle">Achievements</h3>
             <ul>
-              <li><i class="icon fas fa-check"></i> Performed at Cognizant TED event 2015</li>
-              <li><i class="icon fas fa-check"></i> "STAR OF THE MONTH" - miembro más interactivo del equipo</li>
-              <!-- Agrega más logros según convenga -->
+              <li><i class="icon fas fa-check"></i> impelementacion de ia local mediante clusters, uso local mediante APIs </li>
+              <li><i class="icon fas fa-check"></i> creacion de paginas Web en tiempo record</li>
             </ul>
           </div>
         </div>

@@ -26,7 +26,3 @@ document.addEventListener('DOMContentLoaded', function () {
   // script.js
 // Actualmente, esta sección no requiere funcionalidad específica con JavaScript.
 // Puedes agregar interactividad o animaciones según lo necesites.
-document.addEventListener('DOMContentLoaded', function () {
-  // Ejemplo: mensaje en consola al cargar la sección
-  console.log("Sección 'Habilidades' cargada correctamente.");
-});
