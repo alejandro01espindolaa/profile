@@ -85,3 +85,13 @@
     background-color: #ffcc00;
   }
   
+  @media (max-width: 600px) {
+    .informacion-contacto {
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    .detalle-contacto {
+      width: 100%;
+    }
+  }
