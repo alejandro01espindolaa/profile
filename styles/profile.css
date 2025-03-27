@@ -7,9 +7,10 @@
     max-width: 100%;
     margin: 20px auto;
     
-    padding: 4%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
     background-color: #b4b4b4;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
