@@ -5,13 +5,19 @@
     padding: 60px 20px;
     font-family: "Alumni Sans Pinstripe", sans-serif;
     font-size: 1.7em;
+    overflow-x: hidden; /* Evita desbordamiento horizontal */
+
 
   }
   
   .contenedor {
-    max-width: 800px;
+
+    padding: 0 5%;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
+    box-sizing: border-box;
+
   }
   
   .titulo-seccion {
@@ -22,9 +28,18 @@
   
   .informacion-contacto {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre elementos */
   }
+  
+
+  .detalle-contacto {
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+  }
+  
   
   .detalle-contacto h3 {
     color: #ff9500;
@@ -88,10 +103,11 @@
   @media (max-width: 600px) {
     .informacion-contacto {
       flex-direction: column;
-      align-items: center; 
+      align-items: center;
     }
   
     .detalle-contacto {
-      width: 100%;
+      width: 90%;
+      max-width: 100%;
     }
   }
