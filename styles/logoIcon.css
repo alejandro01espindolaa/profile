@@ -104,6 +104,7 @@
 }
 
 .resume-item .content {
+    display: none; /* Oculta todo el contenido por defecto */
     padding: 20px;
     background-color: #0f0f0f;
 }
@@ -140,7 +141,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .resume-item .toggle-btn {
         font-size: 1.3em;
     }

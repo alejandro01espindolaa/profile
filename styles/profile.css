@@ -207,5 +207,15 @@
         width: 100%;
         margin-bottom: 20px;
     }
+
+    p{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    li{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
