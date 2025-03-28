@@ -70,8 +70,8 @@
     background-color: #333;
     border-radius: 30px;
     padding: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .resume-item {
@@ -79,8 +79,8 @@
     border: 2px solid #ff9500;
     border-radius: 15px;
     overflow: hidden;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .toggle-btn {
