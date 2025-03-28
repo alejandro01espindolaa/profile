@@ -1,6 +1,6 @@
 #profile-pad{
-    padding-left: 2%;
-    padding-right: 2%;
+    margin-left: 18%;
+    margin-right: 18%;
 }
 
 #Profile {
@@ -114,6 +114,11 @@
     #profile-list {
         padding-left: 20px;
         text-align: left;
+    }
+
+    #profile-pad{
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
 
