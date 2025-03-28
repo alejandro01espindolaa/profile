@@ -70,8 +70,8 @@
     background-color: #333;
     border-radius: 30px;
     padding: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 18%;
+    margin-right: 18%;
 }
 
 .resume-item {
@@ -79,8 +79,8 @@
     border: 2px solid #ff9500;
     border-radius: 15px;
     overflow: hidden;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 18%;
+    margin-right: 18%;
 }
 
 .toggle-btn {
@@ -151,5 +151,17 @@
     
     .resume-item li {
         font-size: 1em;
+    }
+
+    #estelar2{
+    
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+
+    .resume-item {
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
