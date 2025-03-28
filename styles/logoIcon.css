@@ -53,3 +53,103 @@
 #email-button:hover::after, #github-button:hover::after, #file-button:hover::after, #whatsapp-button:hover::after, #linkedin-button:hover::after {
     width: 100%;
 }
+
+/* My Resume Section Styling */
+#my-resume {
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+h2{
+    font-size: 2.5em;
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #333;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.resume-item {
+    margin-bottom: 20px;
+    border: 2px solid #ff9500;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.toggle-btn {
+    width: 100%;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+      
+}
+
+.toggle-btn:hover {
+    background-color: #444444;
+}
+
+.resume-item .content {
+    padding: 20px;
+    background-color: #0f0f0f;
+}
+
+.resume-item h3 {
+    color: #ff9500;
+    margin-bottom: 10px;
+    font-size: 1.7em;
+}
+
+.resume-item p {
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.resume-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resume-item li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.resume-item li::before {
+    content: '•';
+    color: #ffcc00;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .resume-item .toggle-btn {
+        font-size: 1.3em;
+    }
+    
+    .resume-item h3 {
+        font-size: 1.5em;
+    }
+    
+    .resume-item li {
+        font-size: 1em;
+    }
+}
