@@ -23,6 +23,3 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   
 
-  // script.js
-// Actualmente, esta sección no requiere funcionalidad específica con JavaScript.
-// Puedes agregar interactividad o animaciones según lo necesites.

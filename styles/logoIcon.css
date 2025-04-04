@@ -55,18 +55,22 @@
 }
 
 /* My Resume Section Styling */
+/* My Resume Timeline Section Styling */
 #my-resume {
-    padding: 60px 20px;
+    padding: 60px 20px 120px; /* Aumentado el padding inferior */
     background-color: #1a1a1a;
     color: #ffffff;
     font-family: "Alumni Sans Pinstripe", sans-serif;
+    position: relative;
+    overflow: hidden; /* Para contener los elementos flotantes */
+    margin-bottom: 30px; /* Espacio adicional al final de la sección */
 }
 
-#estelar2{
+#estelar2 {
     font-size: 2.5em;
     color: #ffcc00;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     background-color: #333;
     border-radius: 30px;
     padding: 10px;
@@ -74,13 +78,71 @@
     margin-right: 18%;
 }
 
+/* Línea vertical central */
+#my-resume::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ff9500;
+    top: 180px; /* Ajusta para que comience después del título */
+    bottom: 60px;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+/* Contenedor para clearfix */
+#resume-container {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    clear: both;
+    overflow: hidden; /* Contiene los floats */
+}
+
 .resume-item {
-    margin-bottom: 20px;
-    border: 2px solid #ff9500;
-    border-radius: 15px;
-    overflow: hidden;
-    margin-left: 18%;
-    margin-right: 18%;
+    position: relative;
+    margin-bottom: 50px;
+    width: 45%;
+    box-sizing: border-box;
+    clear: both;
+}
+
+/* Elementos a la izquierda */
+.resume-item:nth-child(odd) {
+    float: left;
+    text-align: right;
+    padding-right: 40px;
+}
+
+/* Elementos a la derecha */
+.resume-item:nth-child(even) {
+    float: right;
+    text-align: left;
+    padding-left: 40px;
+    margin-top: 30px; /* Espaciado adicional para alternar altura */
+}
+
+/* Círculos en la línea temporal */
+.resume-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffcc00;
+    border: 4px solid #ff9500;
+    border-radius: 50%;
+    top: 15px;
+    z-index: 2;
+}
+
+.resume-item:nth-child(odd)::after {
+    right: -14px;
+}
+
+.resume-item:nth-child(even)::after {
+    left: -14px;
 }
 
 .toggle-btn {
@@ -89,14 +151,14 @@
     color: #ffffff;
     border: none;
     padding: 15px 20px;
-    text-align: left;
-    font-size: 2.5em;
+    font-size: 1.8em;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: background-color 0.3s;
-      
+    border-radius: 10px;
+    text-align: inherit; /* Mantener alineación basada en posición */
 }
 
 .toggle-btn:hover {
@@ -107,6 +169,9 @@
     display: none; /* Oculta todo el contenido por defecto */
     padding: 20px;
     background-color: #0f0f0f;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid #ff9500;
 }
 
 .resume-item h3 {
@@ -123,13 +188,19 @@
 .resume-item ul {
     list-style-type: none;
     padding: 0;
+    text-align: left; /* Mantiene las listas alineadas a la izquierda siempre */
+}
+
+.resume-item:nth-child(odd) ul {
+    padding-right: 0;
+    padding-left: 25px;
 }
 
 .resume-item li {
     position: relative;
     padding-left: 25px;
     margin-bottom: 10px;
-    font-size: 2.0em;
+    font-size: 1.5em;
 }
 
 .resume-item li::before {
@@ -140,29 +211,69 @@
     font-weight: bold;
 }
 
+/* Clearfix después de la sección completa */
+#my-resume::after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+}
+
+/* Separador final para asegurar que no haya colisiones */
+.resume-end-spacer {
+    clear: both;
+    width: 100%;
+    height: 50px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .resume-item .toggle-btn {
+    #my-resume::before {
+        left: 30px;
+        margin-left: 0;
+    }
+    
+    .resume-item {
+        width: 90%;
+        float: right;
+        text-align: left;
+        padding-left: 70px;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .resume-item:nth-child(odd),
+    .resume-item:nth-child(even) {
+        float: none;
+        text-align: left;
+        padding-left: 70px;
+        padding-right: 0;
+        margin-top: 0;
+    }
+    
+    .resume-item:nth-child(odd)::after,
+    .resume-item:nth-child(even)::after {
+        left: 19px;
+        right: auto;
+    }
+    
+    .toggle-btn {
         font-size: 1.3em;
+        text-align: left;
     }
     
     .resume-item h3 {
-        font-size: 2.0em;
+        font-size: 1.5em;
     }
     
     .resume-item li {
-        font-size: 1.5em;
-    }
-
-    #estelar2{
-    
-        margin-left: 5%;
-        margin-right: 5%;
+        font-size: 1.3em;
     }
     
-
-    .resume-item {
+    #estelar2 {
         margin-left: 5%;
         margin-right: 5%;
+        font-size: 2em;
     }
 }
