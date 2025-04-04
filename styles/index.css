@@ -217,3 +217,12 @@ h1{
 
 }
 
+@media (min-width: 768px) {
+    #estelar {
+      
+        font-size: 100%;
+        font-weight: 150;
+       
+    
+    }
+}
