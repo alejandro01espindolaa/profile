@@ -90,7 +90,7 @@
     border: none;
     padding: 15px 20px;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 2.5em;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -129,7 +129,7 @@
     position: relative;
     padding-left: 25px;
     margin-bottom: 10px;
-    font-size: 1.2em;
+    font-size: 2.0em;
 }
 
 .resume-item li::before {
@@ -147,11 +147,11 @@
     }
     
     .resume-item h3 {
-        font-size: 1.5em;
+        font-size: 2.0em;
     }
     
     .resume-item li {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     #estelar2{
