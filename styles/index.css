@@ -220,8 +220,8 @@ h1{
 @media (max-width: 768px) {
     #estelar {
       
-        font-size: 115%;
-        font-weight: 150;
+        font-size: 175%;
+        font-weight:bold  ;
        
     
     }
