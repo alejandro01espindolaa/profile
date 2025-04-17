@@ -644,8 +644,9 @@
     </div>
   </section>
 
-<!-- Footer -->
 
+
+  <!-- contacto -->
 
   <section id="contacto">
     <div class="contenedor">
@@ -666,14 +667,19 @@
           <input type="text" id="nombre" name="nombre" required>
         </div>
         <div class="campo-formulario">
-          <label for="correo">e-mail</label>
-          <input type="email" id="correo" name="correo" required>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
         </div>
         <div class="campo-formulario">
-          <label for="mensaje">message</label>
+          <label for="telefono">Phone</label>
+          <input type="text" id="telefono" name="telefono" required>
+        </div>          
+        <div class="campo-formulario">
+          <label for="mensaje">Message</label>
           <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
         </div>
-        <button type="submit" id="btncontact">Send</button>
+        <button type="submit" id="submit-btn">Enviar</button>
+        <div id="respuesta" class="mensaje-respuesta"></div>
       </form>
     </div>
   </section>
